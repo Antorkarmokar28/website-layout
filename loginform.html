@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <script src="https://kit.fontawesome.com/52d4052aca.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login-title{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .login-form input{
+            margin-top: 10px;
+            padding: 8px 10px;
+            font-size: 1.5em;
+            border-radius: 6px;
+            outline: 0;
+        }
+        .login-form input[type="submit"]{
+            background-color: gold;
+            color: #FFFFFF;
+            border: 0;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu a{
+            text-decoration: none;
+            color: #151515;
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 15px;
+        }
+        .fa-user, .fa-arrow-right-from-bracket{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <div class="link-box">
+            <a href="">Home</a><a href="">About</a><a href="">services</a>
+        </div>
+        <div class="iconbox">
+            <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <section class="container">
+        <form class="login-form">
+            <h1 class="login-title">Please login now</h1>
+            <input type="text" name="" id="" placeholder="Enter your name">
+            <input type="email" name="" id="" placeholder="Enter your email" required>
+            <input type="password" name="" id="" placeholder="Enter your password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+</body>
+</html>
